@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueBix Staffing Solutions | Fuel Your Future</title>
+  <meta name="description" content="Bluebix staffing solutions brings together job seekers and employers across 30+ industries worldwide." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            background: '#ffffff',
+            foreground: '#0f172a',
+            primary: '#0f172a',
+            secondary: '#f8fafc',
+            muted: '#f1f5f9',
+            'muted-foreground': '#64748b',
+            border: '#e2e8f0',
+            card: '#ffffff',
+            'card-foreground': '#0f172a',
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-background text-foreground antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- HEADER -->
+  <header id="main-header" class="fixed left-0 right-0 top-0 z-50 transition-all duration-500 bg-white py-0 border-b border-gray-100">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
+      
+      <!-- Logo -->
+      <a href="https://www.bluebixinc.com" target="_blank" rel="noopener noreferrer" class="group relative flex items-center">
+        <div class="relative h-16 w-48 overflow-hidden">
+          <img src="public/bluebix-logo.png" onerror="this.onerror=null; this.src='bluebix-logo.png';" alt="BlueBix Staffing Solutions" class="absolute h-[210%] w-[210%] -translate-x-[24%] -translate-y-[24%] object-contain transition-opacity duration-300 group-hover:opacity-85" />
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden items-center gap-1 lg:flex">
+        <a href="https://www.bluebixinc.com" target="_blank" rel="noopener noreferrer" class="nav-item group relative overflow-hidden rounded-lg px-4 py-2 text-sm font-semibold text-[#1e3a5f] transition-colors duration-300 hover:text-[#f97316]">
+          <span class="relative z-10">Home</span>
+          <div class="active-bg absolute inset-0 rounded-lg bg-[#f97316]/10 opacity-0 scale-95 transition-all duration-300"></div>
+          <div class="active-line absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f97316] to-transparent w-0 opacity-0 transition-all duration-300"></div>
+        </a>
+        <a href="https://www.bluebixinc.com/about" target="_blank" rel="noopener noreferrer" class="nav-item group relative overflow-hidden rounded-lg px-4 py-2 text-sm font-semibold text-[#1e3a5f] transition-colors duration-300 hover:text-[#f97316]">
+          <span class="relative z-10">About</span>
+          <div class="active-bg absolute inset-0 rounded-lg bg-[#f97316]/10 opacity-0 scale-95 transition-all duration-300"></div>
+          <div class="active-line absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f97316] to-transparent w-0 opacity-0 transition-all duration-300"></div>
+        </a>
+        <a href="#services" class="nav-item group relative overflow-hidden rounded-lg px-4 py-2 text-sm font-semibold text-[#1e3a5f] transition-colors duration-300 hover:text-[#f97316]">
+          <span class="relative z-10">Services</span>
+          <div class="active-bg absolute inset-0 rounded-lg bg-[#f97316]/10 opacity-0 scale-95 transition-all duration-300"></div>
+          <div class="active-line absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f97316] to-transparent w-0 opacity-0 transition-all duration-300"></div>
+        </a>
+        <a href="#industries" class="nav-item group relative overflow-hidden rounded-lg px-4 py-2 text-sm font-semibold text-[#1e3a5f] transition-colors duration-300 hover:text-[#f97316]">
+          <span class="relative z-10">Industries</span>
+          <div class="active-bg absolute inset-0 rounded-lg bg-[#f97316]/10 opacity-0 scale-95 transition-all duration-300"></div>
+          <div class="active-line absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f97316] to-transparent w-0 opacity-0 transition-all duration-300"></div>
+        </a>
+        <a href="#contact" class="nav-item group relative overflow-hidden rounded-lg px-4 py-2 text-sm font-semibold text-[#1e3a5f] transition-colors duration-300 hover:text-[#f97316]">
+          <span class="relative z-10">Contact</span>
+          <div class="active-bg absolute inset-0 rounded-lg bg-[#f97316]/10 opacity-0 scale-95 transition-all duration-300"></div>
+          <div class="active-line absolute bottom-0 left-1/2 h-0.5 -translate-x-1/2 bg-gradient-to-r from-transparent via-[#f97316] to-transparent w-0 opacity-0 transition-all duration-300"></div>
+        </a>
+
+        <!-- Get Started Button -->
+        <a href="https://www.bluebixinc.com" target="_blank" rel="noopener noreferrer" class="group relative ml-4 overflow-hidden rounded-full bg-gradient-to-r from-[#ea580c] to-[#f97316] px-6 py-2.5 text-sm font-bold text-[#ffffff] shadow-lg shadow-[#f97316]/25 transition-all duration-300 hover:shadow-[#f97316]/40 hover:scale-105">
+          <span class="relative z-10 flex items-center gap-1">
+            Get Started
+            <i data-lucide="chevron-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
+          </span>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#f97316] to-[#fb923c] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="menu-toggle" class="flex h-10 w-10 items-center justify-center rounded-lg border border-[#f97316]/40 text-[#1e3a5f] transition-all duration-300 hover:bg-[#f97316]/10 lg:hidden" aria-label="Toggle menu">
+        <i data-lucide="menu" id="menu-icon-open" class="h-5 w-5"></i>
+        <i data-lucide="x" id="menu-icon-close" class="h-5 w-5 hidden"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="overflow-hidden transition-all duration-500 max-h-0 opacity-0 lg:hidden">
+      <div class="border-t border-gray-200 bg-white px-6 py-6 shadow-md">
+        <nav class="flex flex-col gap-1">
+          <a href="https://www.bluebixinc.com" target="_blank" class="mobile-nav-link rounded-xl px-4 py-3 text-sm font-semibold text-[#1e3a5f] transition-all duration-300 hover:bg-[#f97316]/10 hover:text-[#f97316]">Home</a>
+          <a href="https://www.bluebixinc.com/about" target="_blank" class="mobile-nav-link rounded-xl px-4 py-3 text-sm font-semibold text-[#1e3a5f] transition-all duration-300 hover:bg-[#f97316]/10 hover:text-[#f97316]">About</a>
+          <a href="#services" class="mobile-nav-link rounded-xl px-4 py-3 text-sm font-semibold text-[#1e3a5f] transition-all duration-300 hover:bg-[#f97316]/10 hover:text-[#f97316]">Services</a>
+          <a href="#industries" class="mobile-nav-link rounded-xl px-4 py-3 text-sm font-semibold text-[#1e3a5f] transition-all duration-300 hover:bg-[#f97316]/10 hover:text-[#f97316]">Industries</a>
+          <a href="#contact" class="mobile-nav-link rounded-xl px-4 py-3 text-sm font-semibold text-[#1e3a5f] transition-all duration-300 hover:bg-[#f97316]/10 hover:text-[#f97316]">Contact</a>
+          <a href="https://www.bluebixinc.com" target="_blank" class="mt-3 rounded-full bg-gradient-to-r from-[#ea580c] to-[#f97316] px-5 py-3 text-center text-sm font-bold text-[#ffffff] shadow-lg shadow-[#f97316]/20">
+            Get Started
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#050d1f] via-[#0b1a3b] to-[#122250]">
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas" class="pointer-events-none absolute inset-0 h-full w-full"></canvas>
+
+    <!-- Animated Ambient Glowing Orbs -->
+    <div class="absolute left-1/4 top-1/4 h-[500px] w-[500px] animate-pulse rounded-full bg-[#2563eb]/8 blur-[120px]"></div>
+    <div class="absolute bottom-1/4 right-1/3 h-[400px] w-[400px] rounded-full bg-[#7c3aed]/6 blur-[100px]" style="animation-delay: 2s; animation-duration: 4s;"></div>
+    <div class="absolute right-1/4 top-1/2 h-[300px] w-[300px] animate-pulse rounded-full bg-[#06b6d4]/6 blur-[80px]" style="animation-delay: 1s; animation-duration: 5s;"></div>
+
+    <!-- Grid pattern overlay -->
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(255,255,255,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.3) 1px, transparent 1px); background-size: 80px 80px;"></div>
+    
+    <!-- Radial gradient vignette -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,#050d1f_80%)] opacity-40"></div>
+
+    <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-32 lg:grid-cols-2 lg:gap-20 lg:px-8 lg:pb-28 lg:pt-40">
+      
+      <!-- Hero Left Content -->
+      <div class="animate-reveal">
+        
+        <!-- Location Badges -->
+        <div class="mb-8 flex flex-wrap items-center gap-3">
+          <span class="inline-flex items-center gap-1.5 rounded-full border border-[#2563eb]/30 bg-[#2563eb]/10 px-4 py-1.5 text-xs font-bold tracking-wider text-[#60a5fa] backdrop-blur-sm">
+            <i data-lucide="map-pin" class="h-3 w-3"></i> USA
+          </span>
+          <span class="inline-flex items-center gap-1.5 rounded-full border border-[#2563eb]/30 bg-[#2563eb]/10 px-4 py-1.5 text-xs font-bold tracking-wider text-[#60a5fa] backdrop-blur-sm">
+            <i data-lucide="map-pin" class="h-3 w-3"></i> CANADA
+          </span>
+          <span class="inline-flex items-center gap-1.5 rounded-full border border-[#2563eb]/30 bg-[#2563eb]/10 px-4 py-1.5 text-xs font-bold tracking-wider text-[#60a5fa] backdrop-blur-sm">
+            <i data-lucide="map-pin" class="h-3 w-3"></i> INDIA
+          </span>
+          <div class="h-6 w-px bg-[#ffffff]/10"></div>
+          <span class="flex items-center gap-1 text-xs font-semibold text-[#fbbf24]">
+            <i data-lucide="star" class="h-3 w-3 fill-current"></i> 4.9 Rating
+          </span>
+        </div>
+
+        <!-- Dynamic Headline -->
+        <h1 class="mb-4 text-4xl font-black leading-[1.1] tracking-tight text-[#ffffff] sm:text-5xl md:text-6xl lg:text-7xl">
+          <span class="block">Fuel Your</span>
+          <span class="block bg-gradient-to-r from-[#3b82f6] via-[#60a5fa] to-[#93c5fd] bg-clip-text text-transparent">
+            <span id="typewriter"></span><span class="cursor-blink text-[#60a5fa]">|</span>
+          </span>
+        </h1>
+
+        <p class="mb-8 max-w-lg text-lg leading-relaxed text-[#94a3b8]">
+          Bluebix staffing solutions brings together the job seekers aspirations and the employer's talent needs onto one platform, facilitating connections leading to thriving careers and successful businesses.
+        </p>
+
+        <!-- Feature Pills -->
+        <div class="mb-10 flex flex-wrap gap-3">
+          <span class="flex items-center gap-1.5 rounded-full bg-[#ffffff]/5 px-4 py-2 text-xs font-semibold text-[#c8d6e5] backdrop-blur-sm border border-white/5">
+            <i data-lucide="check-circle-2" class="h-3.5 w-3.5 text-[#22c55e]"></i> Expert Recruiters
+          </span>
+          <span class="flex items-center gap-1.5 rounded-full bg-[#ffffff]/5 px-4 py-2 text-xs font-semibold text-[#c8d6e5] backdrop-blur-sm border border-white/5">
+            <i data-lucide="check-circle-2" class="h-3.5 w-3.5 text-[#22c55e]"></i> 30+ Industries
+          </span>
+          <span class="flex items-center gap-1.5 rounded-full bg-[#ffffff]/5 px-4 py-2 text-xs font-semibold text-[#c8d6e5] backdrop-blur-sm border border-white/5">
+            <i data-lucide="check-circle-2" class="h-3.5 w-3.5 text-[#22c55e]"></i> Global Presence
+          </span>
+          <span class="flex items-center gap-1.5 rounded-full bg-[#ffffff]/5 px-4 py-2 text-xs font-semibold text-[#c8d6e5] backdrop-blur-sm border border-white/5">
+            <i data-lucide="check-circle-2" class="h-3.5 w-3.5 text-[#22c55e]"></i> 24/7 Support
+          </span>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="https://www.bluebixinc.com" target="_blank" rel="noopener noreferrer" class="magnetic-btn group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-gradient-to-r from-[#2563eb] to-[#3b82f6] px-8 py-4 text-sm font-bold text-[#ffffff] shadow-2xl shadow-[#2563eb]/25">
+            <span class="relative z-10 flex items-center gap-2">
+              Visit Our Website
+              <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-1"></i>
+            </span>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#60a5fa] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-[#2563eb] to-[#3b82f6] opacity-30 blur-lg transition-all duration-500 group-hover:opacity-50 group-hover:blur-xl"></div>
+          </a>
+
+          <a href="https://www.bluebixinc.com/about" target="_blank" rel="noopener noreferrer" class="magnetic-btn group relative inline-flex items-center gap-2 overflow-hidden rounded-full border border-[#ffffff]/15 px-8 py-4 text-sm font-bold text-[#ffffff] backdrop-blur-sm transition-all duration-500 hover:border-[#3b82f6]/50 hover:bg-[#ffffff]/5">
+            Learn More
+            <div class="absolute inset-0 -z-10 bg-gradient-to-r from-[#2563eb]/10 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+          </a>
+        </div>
+
+        <!-- Quick Stats Row -->
+        <div class="mt-14 flex items-center gap-10">
+          <div class="flex flex-col relative">
+            <span class="text-3xl font-black text-[#ffffff] md:text-4xl">30+</span>
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#64748b]">Industries</span>
+          </div>
+          <div class="h-8 w-px bg-gradient-to-b from-transparent via-[#334155] to-transparent"></div>
+          <div class="flex flex-col relative">
+            <span class="text-3xl font-black text-[#ffffff] md:text-4xl">1000+</span>
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#64748b]">Solutions</span>
+          </div>
+          <div class="h-8 w-px bg-gradient-to-b from-transparent via-[#334155] to-transparent"></div>
+          <div class="flex flex-col">
+            <span class="text-3xl font-black text-[#ffffff] md:text-4xl">100%</span>
+            <span class="text-xs font-semibold uppercase tracking-widest text-[#64748b]">Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Right -->
+      <div class="relative animate-reveal">
+        <div class="relative">
+          <div class="absolute -inset-4 rounded-3xl bg-gradient-to-r from-[#2563eb]/20 to-[#7c3aed]/20 blur-2xl"></div>
+          <div class="relative overflow-hidden rounded-2xl border border-[#ffffff]/10 shadow-2xl">
+            <img src="public/images/hero-team.jpg" onerror="this.onerror=null; this.src='images/hero-team.jpg';" alt="Business professionals working together" class="h-auto w-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#050d1f]/60 via-transparent to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-[#2563eb]/10 to-transparent"></div>
+          </div>
+        </div>
+
+        <!-- Decorative rings -->
+        <div class="absolute -right-10 top-1/2 h-32 w-32 -translate-y-1/2 rounded-full border border-[#2563eb]/10"></div>
+        <div class="absolute -right-16 top-1/2 h-48 w-48 -translate-y-1/2 rounded-full border border-[#2563eb]/5"></div>
+      </div>
+    </div>
+
+    <!-- Bottom SVG Wave Divider -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 80" fill="none" class="w-full" preserveAspectRatio="none">
+        <path d="M0,48 C360,80 720,16 1080,48 C1260,64 1380,56 1440,48 L1440,80 L0,80 Z" fill="#f8fafc" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="relative overflow-hidden bg-secondary py-24 lg:py-32">
+    <div class="absolute right-0 top-0 h-[600px] w-[600px] -translate-y-1/3 translate-x-1/3 rounded-full bg-[#2563eb]/3 blur-[120px]"></div>
+    <div class="absolute bottom-0 left-0 h-[400px] w-[400px] -translate-x-1/3 translate-y-1/3 rounded-full bg-[#7c3aed]/3 blur-[100px]"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="grid items-center gap-16 lg:grid-cols-2 lg:gap-24">
+        
+        <!-- Left Image with Floating Badges -->
+        <div class="relative animate-reveal">
+          <div class="relative">
+            <div class="absolute -inset-4 rounded-3xl bg-gradient-to-r from-[#2563eb]/15 to-[#7c3aed]/15 blur-2xl"></div>
+            <div class="relative overflow-hidden rounded-3xl border border-border/50 shadow-2xl">
+              <img src="public/images/about-team.jpg" onerror="this.onerror=null; this.src='images/about-team.jpg';" alt="Business team meeting" class="h-auto w-full object-cover" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0b1a3b]/30 to-transparent"></div>
+            </div>
+
+            <!-- Floating Stat Card 1 -->
+            <div class="absolute -bottom-6 -right-4 rounded-2xl border border-border/50 bg-white/95 p-5 shadow-2xl backdrop-blur-sm md:-bottom-8 md:-right-8">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#22c55e] to-[#16a34a]">
+                  <i data-lucide="trending-up" class="h-6 w-6 text-white"></i>
+                </div>
+                <div>
+                  <p class="text-2xl font-black text-primary">98%</p>
+                  <p class="text-xs font-semibold text-muted-foreground">Client Retention</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Stat Card 2 -->
+            <div class="absolute -left-4 -top-4 rounded-2xl border border-border/50 bg-white/95 p-4 shadow-2xl backdrop-blur-sm md:-left-6 md:-top-6">
+              <div class="flex items-center gap-2">
+                <i data-lucide="users" class="h-5 w-5 text-[#2563eb]"></i>
+                <span class="text-sm font-bold text-primary">1000+ Placements</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="animate-reveal">
+          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#2563eb]/20 bg-[#2563eb]/5 px-4 py-2">
+            <div class="h-1.5 w-1.5 rounded-full bg-[#2563eb]"></div>
+            <span class="text-xs font-bold uppercase tracking-widest text-[#2563eb]">About BlueBix</span>
+          </div>
+
+          <h2 class="mb-6 text-3xl font-black leading-tight text-primary lg:text-5xl">
+            We are one of the <span class="bg-gradient-to-r from-[#2563eb] to-[#3b82f6] bg-clip-text text-transparent">leading recruitment</span> and staffing company
+          </h2>
+
+          <p class="mb-10 text-base leading-relaxed text-muted-foreground lg:text-lg">
+            Bluebix offers cost effective and sustainable solutions to companies enhancing their growth strategy. At the same time, we excel in enriching the lives of people by actively participating in their career growth trajectory.
+          </p>
+
+          <!-- 3D Tilt Values Cards -->
+          <div class="flex flex-col gap-4">
+            
+            <div class="tilt-card rounded-2xl" data-glare="rgba(37,99,235,0.1)">
+              <div class="group flex items-start gap-5 rounded-2xl border border-border/50 bg-white p-5 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-xl">
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-transform duration-500 group-hover:scale-110">
+                  <i data-lucide="eye" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="mb-1 text-sm font-bold text-primary">Vision</h4>
+                  <p class="text-sm leading-relaxed text-muted-foreground">Our vision is to become the go-to place for all your recruitment needs.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tilt-card rounded-2xl" data-glare="rgba(124,58,237,0.1)">
+              <div class="group flex items-start gap-5 rounded-2xl border border-border/50 bg-white p-5 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-xl">
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#7c3aed] to-[#8b5cf6] text-white shadow-lg transition-transform duration-500 group-hover:scale-110">
+                  <i data-lucide="target" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="mb-1 text-sm font-bold text-primary">Mission</h4>
+                  <p class="text-sm leading-relaxed text-muted-foreground">Our mission is to serve you with top-talent to accelerate your growth.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tilt-card rounded-2xl" data-glare="rgba(6,182,212,0.1)">
+              <div class="group flex items-start gap-5 rounded-2xl border border-border/50 bg-white p-5 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-xl">
+                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#06b6d4] to-[#22d3ee] text-white shadow-lg transition-transform duration-500 group-hover:scale-110">
+                  <i data-lucide="heart" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="mb-1 text-sm font-bold text-primary">Core Values</h4>
+                  <p class="text-sm leading-relaxed text-muted-foreground">Our core values show how deeply we are committed to your success.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="https://www.bluebixinc.com/about" target="_blank" rel="noopener noreferrer" class="group mt-10 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#2563eb] to-[#3b82f6] px-8 py-4 text-sm font-bold text-white shadow-xl shadow-[#2563eb]/20 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2563eb]/30">
+            Know More About Us
+            <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="relative overflow-hidden bg-white py-24 lg:py-32">
+    <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 1px 1px, #2563eb 1px, transparent 0); background-size: 40px 40px;"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-20 text-center animate-reveal">
+        <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#2563eb]/20 bg-[#2563eb]/5 px-4 py-2">
+          <div class="h-1.5 w-1.5 rounded-full bg-[#2563eb]"></div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#2563eb]">Our Services</span>
+        </div>
+        <h2 class="mb-5 text-3xl font-black text-primary lg:text-5xl">
+          Services We <span class="bg-gradient-to-r from-[#2563eb] to-[#3b82f6] bg-clip-text text-transparent">Provide</span>
+        </h2>
+        <p class="mx-auto max-w-2xl text-base text-muted-foreground lg:text-lg">
+          Comprehensive consulting solutions designed to transform your business and drive sustainable growth.
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        
+        <!-- Card 1 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(37,99,235,0.08)">
+          <a href="https://www.bluebixinc.com/#services" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+              <i data-lucide="settings" class="h-6 w-6"></i>
+            </div>
+            <h3 class="mb-2 text-sm font-bold leading-snug text-primary group-hover:text-[#2563eb]">Workforce Optimization and Efficiency Consulting</h3>
+            <p class="mb-4 flex-1 text-xs leading-relaxed text-muted-foreground">Streamline operations and maximize workforce productivity.</p>
+            <div class="flex items-center gap-1 text-xs font-semibold text-[#2563eb] opacity-0 transition-all duration-300 group-hover:opacity-100">
+              Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(124,58,237,0.08)">
+          <a href="https://www.bluebixinc.com/#services" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#7c3aed] to-[#8b5cf6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#7c3aed] to-[#8b5cf6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+              <i data-lucide="shield" class="h-6 w-6"></i>
+            </div>
+            <h3 class="mb-2 text-sm font-bold leading-snug text-primary group-hover:text-[#7c3aed]">Compliance and Regulatory Advisory</h3>
+            <p class="mb-4 flex-1 text-xs leading-relaxed text-muted-foreground">Navigate complex regulations with expert guidance.</p>
+            <div class="flex items-center gap-1 text-xs font-semibold text-[#7c3aed] opacity-0 transition-all duration-300 group-hover:opacity-100">
+              Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(6,182,212,0.08)">
+          <a href="https://www.bluebixinc.com/#services" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#06b6d4] to-[#22d3ee] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#06b6d4] to-[#22d3ee] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+              <i data-lucide="bar-chart-3" class="h-6 w-6"></i>
+            </div>
+            <h3 class="mb-2 text-sm font-bold leading-snug text-primary group-hover:text-[#06b6d4]">HR Analytics and Workforce Planning</h3>
+            <p class="mb-4 flex-1 text-xs leading-relaxed text-muted-foreground">Data-driven insights for strategic workforce decisions.</p>
+            <div class="flex items-center gap-1 text-xs font-semibold text-[#06b6d4] opacity-0 transition-all duration-300 group-hover:opacity-100">
+              Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(245,158,11,0.08)">
+          <a href="https://www.bluebixinc.com/#services" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#f59e0b] to-[#fbbf24] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#f59e0b] to-[#fbbf24] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+              <i data-lucide="monitor" class="h-6 w-6"></i>
+            </div>
+            <h3 class="mb-2 text-sm font-bold leading-snug text-primary group-hover:text-[#f59e0b]">Technology and Digital Transformation</h3>
+            <p class="mb-4 flex-1 text-xs leading-relaxed text-muted-foreground">Modernize your business with cutting-edge technology.</p>
+            <div class="flex items-center gap-1 text-xs font-semibold text-[#f59e0b] opacity-0 transition-all duration-300 group-hover:opacity-100">
+              Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(34,197,94,0.08)">
+          <a href="https://www.bluebixinc.com/#services" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#22c55e] to-[#4ade80] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#22c55e] to-[#4ade80] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+              <i data-lucide="users" class="h-6 w-6"></i>
+            </div>
+            <h3 class="mb-2 text-sm font-bold leading-snug text-primary group-hover:text-[#22c55e]">Leadership Development and Talent Management</h3>
+            <p class="mb-4 flex-1 text-xs leading-relaxed text-muted-foreground">Build high-performing leaders and teams.</p>
+            <div class="flex items-center gap-1 text-xs font-semibold text-[#22c55e] opacity-0 transition-all duration-300 group-hover:opacity-100">
+              Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(236,72,153,0.08)">
+          <a href="https://www.bluebixinc.com/#services" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#ec4899] to-[#f472b6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#ec4899] to-[#f472b6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+              <i data-lucide="refresh-cw" class="h-6 w-6"></i>
+            </div>
+            <h3 class="mb-2 text-sm font-bold leading-snug text-primary group-hover:text-[#ec4899]">Flexible Workforce Solutions</h3>
+            <p class="mb-4 flex-1 text-xs leading-relaxed text-muted-foreground">Adaptable staffing for changing business needs.</p>
+            <div class="flex items-center gap-1 text-xs font-semibold text-[#ec4899] opacity-0 transition-all duration-300 group-hover:opacity-100">
+              Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(37,99,235,0.08)">
+          <a href="https://www.bluebixinc.com/#services" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#7c3aed] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#7c3aed] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+              <i data-lucide="briefcase" class="h-6 w-6"></i>
+            </div>
+            <h3 class="mb-2 text-sm font-bold leading-snug text-primary group-hover:text-[#2563eb]">Comprehensive Staffing Solutions</h3>
+            <p class="mb-4 flex-1 text-xs leading-relaxed text-muted-foreground">End-to-end recruitment and placement services.</p>
+            <div class="flex items-center gap-1 text-xs font-semibold text-[#2563eb] opacity-0 transition-all duration-300 group-hover:opacity-100">
+              Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(6,182,212,0.08)">
+          <a href="https://www.bluebixinc.com/#services" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#06b6d4] to-[#2563eb] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#06b6d4] to-[#2563eb] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+              <i data-lucide="sparkles" class="h-6 w-6"></i>
+            </div>
+            <h3 class="mb-2 text-sm font-bold leading-snug text-primary group-hover:text-[#06b6d4]">Oppora.AI</h3>
+            <p class="mb-4 flex-1 text-xs leading-relaxed text-muted-foreground">AI-powered recruitment and talent matching platform.</p>
+            <div class="flex items-center gap-1 text-xs font-semibold text-[#06b6d4] opacity-0 transition-all duration-300 group-hover:opacity-100">
+              Learn more <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES SECTION -->
+  <section id="industries" class="relative overflow-hidden bg-gradient-to-br from-[#050d1f] via-[#0b1a3b] to-[#122250] py-24 lg:py-32">
+    <div class="absolute left-1/4 top-0 h-[400px] w-[400px] rounded-full bg-[#2563eb]/5 blur-[120px]"></div>
+    <div class="absolute bottom-0 right-1/4 h-[300px] w-[300px] rounded-full bg-[#7c3aed]/5 blur-[100px]"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-20 text-center animate-reveal">
+        <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#2563eb]/30 bg-[#2563eb]/10 px-4 py-2">
+          <div class="h-1.5 w-1.5 rounded-full bg-[#60a5fa]"></div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#60a5fa]">Industries</span>
+        </div>
+        <h2 class="mb-5 text-3xl font-black text-white lg:text-5xl">
+          Industries We <span class="bg-gradient-to-r from-[#3b82f6] to-[#60a5fa] bg-clip-text text-transparent">Serve</span>
+        </h2>
+        <p class="mx-auto max-w-2xl text-base text-[#94a3b8] lg:text-lg">
+          Delivering specialized workforce and consulting solutions across diverse industry sectors worldwide.
+        </p>
+      </div>
+
+      <!-- Industry Cards Grid -->
+      <div class="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+        
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f59e0b]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="building-2" class="h-6 w-6 text-[#f59e0b]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Construction</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#f59e0b] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#06b6d4]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="truck" class="h-6 w-6 text-[#06b6d4]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Transportation</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#06b6d4] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ec4899]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="shopping-cart" class="h-6 w-6 text-[#ec4899]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Consumer</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#ec4899] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#22c55e]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="flask-conical" class="h-6 w-6 text-[#22c55e]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Life Science</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#22c55e] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f97316]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="zap" class="h-6 w-6 text-[#f97316]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Energy</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#f97316] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#8b5cf6]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="landmark" class="h-6 w-6 text-[#8b5cf6]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">BSFI</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#8b5cf6] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#14b8a6]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="share-2" class="h-6 w-6 text-[#14b8a6]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Outsourcing</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#14b8a6] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#2563eb]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="monitor" class="h-6 w-6 text-[#2563eb]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">IT</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#2563eb] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#ef4444]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="factory" class="h-6 w-6 text-[#ef4444]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Manufacturing</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#ef4444] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#d97706]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="crown" class="h-6 w-6 text-[#d97706]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">C-Suite</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#d97706] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#6366f1]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="building" class="h-6 w-6 text-[#6366f1]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Government</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#6366f1] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#0ea5e9]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="wrench" class="h-6 w-6 text-[#0ea5e9]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Engineering</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#0ea5e9] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+        <a href="https://www.bluebixinc.com/#industries" target="_blank" class="group relative overflow-hidden rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition-all duration-700 hover:-translate-y-2 hover:border-white/15 hover:bg-white/[0.06] hover:shadow-2xl animate-reveal">
+          <div class="relative mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f43f5e]/10 transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="newspaper" class="h-6 w-6 text-[#f43f5e]"></i>
+          </div>
+          <h4 class="relative text-sm font-bold text-[#e2e8f0] transition-colors group-hover:text-white">Media</h4>
+          <div class="absolute bottom-0 left-0 h-0.5 w-full origin-left scale-x-0 bg-[#f43f5e] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </a>
+
+      </div>
+
+      <!-- Explore All Industries CTA -->
+      <div class="mt-16 text-center animate-reveal">
+        <a href="https://www.bluebixinc.com" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-8 py-4 text-sm font-bold text-white backdrop-blur-sm transition-all duration-500 hover:border-[#3b82f6]/50 hover:bg-[#2563eb]/10 hover:shadow-lg hover:shadow-[#2563eb]/10">
+          Explore All Industries
+          <span class="transition-transform group-hover:translate-x-1">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="relative overflow-hidden bg-secondary py-20 lg:py-24">
+    <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle at 2px 2px, #2563eb 1px, transparent 0); background-size: 32px 32px;"></div>
+
+    <div class="relative mx-auto max-w-6xl px-6 lg:px-8">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        
+        <!-- Stat Card 1 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-border/50 bg-white p-8 text-center transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl animate-reveal">
+          <div class="absolute left-1/2 top-0 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#2563eb] to-[#3b82f6] opacity-10 blur-2xl transition-opacity duration-500 group-hover:opacity-25"></div>
+          <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="building-2" class="h-7 w-7"></i>
+          </div>
+          <h3 class="mb-2 text-4xl font-black text-primary lg:text-5xl">
+            <span class="counter" data-target="30" data-suffix="+">0+</span>
+          </h3>
+          <p class="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Industries We Cater</p>
+          <div class="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </div>
+
+        <!-- Stat Card 2 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-border/50 bg-white p-8 text-center transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl animate-reveal">
+          <div class="absolute left-1/2 top-0 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#7c3aed] to-[#8b5cf6] opacity-10 blur-2xl transition-opacity duration-500 group-hover:opacity-25"></div>
+          <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#7c3aed] to-[#8b5cf6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="lightbulb" class="h-7 w-7"></i>
+          </div>
+          <h3 class="mb-2 text-4xl font-black text-primary lg:text-5xl">
+            <span class="counter" data-target="1000" data-suffix="+">0+</span>
+          </h3>
+          <p class="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Solutions Provided</p>
+          <div class="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#7c3aed] to-[#8b5cf6] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </div>
+
+        <!-- Stat Card 3 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-border/50 bg-white p-8 text-center transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl animate-reveal">
+          <div class="absolute left-1/2 top-0 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#22c55e] to-[#4ade80] opacity-10 blur-2xl transition-opacity duration-500 group-hover:opacity-25"></div>
+          <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#22c55e] to-[#4ade80] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="smile-plus" class="h-7 w-7"></i>
+          </div>
+          <h3 class="mb-2 text-4xl font-black text-primary lg:text-5xl">
+            <span class="counter" data-target="100" data-suffix="%">0%</span>
+          </h3>
+          <p class="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Happy Clients</p>
+          <div class="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#22c55e] to-[#4ade80] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </div>
+
+        <!-- Stat Card 4 -->
+        <div class="group relative overflow-hidden rounded-2xl border border-border/50 bg-white p-8 text-center transition-all duration-700 hover:-translate-y-2 hover:shadow-2xl animate-reveal">
+          <div class="absolute left-1/2 top-0 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-br from-[#06b6d4] to-[#22d3ee] opacity-10 blur-2xl transition-opacity duration-500 group-hover:opacity-25"></div>
+          <div class="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#06b6d4] to-[#22d3ee] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+            <i data-lucide="globe" class="h-7 w-7"></i>
+          </div>
+          <h3 class="mb-2 text-4xl font-black text-primary lg:text-5xl">
+            <span class="counter" data-target="6" data-suffix="">0</span>
+          </h3>
+          <p class="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Global Offices</p>
+          <div class="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#06b6d4] to-[#22d3ee] transition-transform duration-500 group-hover:scale-x-100"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section class="relative overflow-hidden bg-white py-24 lg:py-32">
+    <div class="absolute left-0 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#2563eb]/3 blur-[120px]"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-20 text-center animate-reveal">
+        <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#2563eb]/20 bg-[#2563eb]/5 px-4 py-2">
+          <div class="h-1.5 w-1.5 rounded-full bg-[#2563eb]"></div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#2563eb]">Testimonials</span>
+        </div>
+        <h2 class="mb-5 text-3xl font-black text-primary lg:text-5xl">
+          What Our Clients <span class="bg-gradient-to-r from-[#2563eb] to-[#3b82f6] bg-clip-text text-transparent">Say</span>
+        </h2>
+      </div>
+
+      <!-- Featured Interactive Testimonial Card -->
+      <div class="relative mx-auto mb-12 max-w-3xl animate-reveal">
+        <div class="relative overflow-hidden rounded-3xl border border-border/50 bg-gradient-to-br from-white to-secondary p-10 shadow-2xl lg:p-14">
+          
+          <!-- Background Quote Icon -->
+          <div class="absolute right-8 top-8 opacity-5">
+            <i data-lucide="quote" class="h-32 w-32 text-[#2563eb]"></i>
+          </div>
+
+          <!-- Star Rating -->
+          <div class="mb-6 flex gap-1 text-[#fbbf24]">
+            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+            <i data-lucide="star" class="h-5 w-5 fill-current"></i>
+          </div>
+
+          <!-- Quote Text -->
+          <blockquote id="testimonial-quote" class="relative mb-8 text-xl font-medium leading-relaxed text-primary lg:text-2xl transition-all duration-300">
+            "Partnership with Bluebix has been amazing. Their professionalism and management skills are exceptional. We thank the team members for their effort."
+          </blockquote>
+
+          <!-- Author Info -->
+          <div class="flex items-center gap-4">
+            <div id="testimonial-avatar" class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-lg font-black text-white shadow-lg">
+              HK
+            </div>
+            <div>
+              <p id="testimonial-name" class="text-base font-bold text-primary">Harley Klien</p>
+              <p id="testimonial-role" class="text-sm text-muted-foreground">CEO, Abacus Inc</p>
+            </div>
+          </div>
+
+          <!-- Carousel Arrow Buttons -->
+          <div class="absolute bottom-10 right-10 flex items-center gap-2 lg:bottom-14 lg:right-14">
+            <button id="testimonial-prev" class="flex h-10 w-10 items-center justify-center rounded-xl border border-border bg-white text-muted-foreground transition-all hover:border-[#2563eb]/30 hover:text-[#2563eb]">
+              <i data-lucide="chevron-left" class="h-4 w-4"></i>
+            </button>
+            <button id="testimonial-next" class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-r from-[#2563eb] to-[#3b82f6] text-white transition-all hover:shadow-lg hover:shadow-[#2563eb]/30">
+              <i data-lucide="chevron-right" class="h-4 w-4"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Carousel Dots Indicator -->
+        <div id="testimonial-dots" class="mt-8 flex justify-center gap-2">
+          <button class="dot-btn h-2 w-8 rounded-full bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-all duration-500"></button>
+          <button class="dot-btn h-2 w-2 rounded-full bg-border hover:bg-muted-foreground transition-all duration-500"></button>
+          <button class="dot-btn h-2 w-2 rounded-full bg-border hover:bg-muted-foreground transition-all duration-500"></button>
+          <button class="dot-btn h-2 w-2 rounded-full bg-border hover:bg-muted-foreground transition-all duration-500"></button>
+        </div>
+      </div>
+
+      <!-- Testimonial Selector Mini Cards -->
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        
+        <button class="t-mini-card group relative overflow-hidden rounded-2xl border border-[#2563eb]/30 bg-[#2563eb]/5 p-5 text-left shadow-lg transition-all duration-500" data-index="0">
+          <div class="mb-3 flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-xs font-bold text-white">HK</div>
+            <div>
+              <p class="text-xs font-bold text-primary">Harley Klien</p>
+              <p class="text-[0.65rem] text-muted-foreground">CEO, Abacus Inc</p>
+            </div>
+          </div>
+          <p class="line-clamp-2 text-xs leading-relaxed text-muted-foreground">Partnership with Bluebix has been amazing...</p>
+        </button>
+
+        <button class="t-mini-card group relative overflow-hidden rounded-2xl border border-border/50 bg-white p-5 text-left transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-md" data-index="1">
+          <div class="mb-3 flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#94a3b8] text-xs font-bold text-white">SJ</div>
+            <div>
+              <p class="text-xs font-bold text-primary">Sarah Johnson</p>
+              <p class="text-[0.65rem] text-muted-foreground">HR Director</p>
+            </div>
+          </div>
+          <p class="line-clamp-2 text-xs leading-relaxed text-muted-foreground">We have been using Bluebix staffing services for 10 years...</p>
+        </button>
+
+        <button class="t-mini-card group relative overflow-hidden rounded-2xl border border-border/50 bg-white p-5 text-left transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-md" data-index="2">
+          <div class="mb-3 flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#94a3b8] text-xs font-bold text-white">MC</div>
+            <div>
+              <p class="text-xs font-bold text-primary">Michael Chen</p>
+              <p class="text-[0.65rem] text-muted-foreground">Operations Manager</p>
+            </div>
+          </div>
+          <p class="line-clamp-2 text-xs leading-relaxed text-muted-foreground">Bluebix is an excellent aid for all our staffing needs...</p>
+        </button>
+
+        <button class="t-mini-card group relative overflow-hidden rounded-2xl border border-border/50 bg-white p-5 text-left transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-md" data-index="3">
+          <div class="mb-3 flex items-center gap-3">
+            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-[#94a3b8] text-xs font-bold text-white">ER</div>
+            <div>
+              <p class="text-xs font-bold text-primary">Emily Roberts</p>
+              <p class="text-[0.65rem] text-muted-foreground">VP of Talent</p>
+            </div>
+          </div>
+          <p class="line-clamp-2 text-xs leading-relaxed text-muted-foreground">We have partnered with Bluebix just a year back...</p>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & OFFICES SECTION -->
+  <section id="contact" class="relative overflow-hidden bg-secondary py-24 lg:py-32">
+    <div class="absolute right-0 top-0 h-[500px] w-[500px] -translate-y-1/4 translate-x-1/4 rounded-full bg-[#2563eb]/3 blur-[120px]"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-20 text-center animate-reveal">
+        <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-[#2563eb]/20 bg-[#2563eb]/5 px-4 py-2">
+          <i data-lucide="globe" class="h-3.5 w-3.5 text-[#2563eb]"></i>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#2563eb]">Global Presence</span>
+        </div>
+        <h2 class="mb-5 text-3xl font-black text-primary lg:text-5xl">
+          Our <span class="bg-gradient-to-r from-[#2563eb] to-[#3b82f6] bg-clip-text text-transparent">Offices</span> Worldwide
+        </h2>
+        <p class="mx-auto max-w-2xl text-base text-muted-foreground lg:text-lg">
+          Reach out to our global offices for staffing solutions tailored to your needs.
+        </p>
+      </div>
+
+      <!-- Offices Grid -->
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Office 1 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(37,99,235,0.06)">
+          <a href="https://www.bluebixinc.com/#Contact" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+                  <i data-lucide="map-pin" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-primary">New York</h4>
+                  <p class="text-xs font-semibold text-muted-foreground">USA</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-5 flex-1 text-sm leading-relaxed text-muted-foreground">140 Broadway, 46th Floor, Manhattan, New York, 10005</p>
+            <div class="flex flex-col gap-3 border-t border-border/50 pt-5">
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="mail" class="h-4 w-4 text-[#2563eb]"></i> info@bluebixinc.com
+              </div>
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="phone" class="h-4 w-4 text-[#2563eb]"></i> +1 888 777 0933
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Office 2 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(37,99,235,0.06)">
+          <a href="https://www.bluebixinc.com/#Contact" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+                  <i data-lucide="map-pin" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-primary">Boston</h4>
+                  <p class="text-xs font-semibold text-muted-foreground">USA</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-5 flex-1 text-sm leading-relaxed text-muted-foreground">800 Boylston Street, 16th Floor, Boston, MA, 02199</p>
+            <div class="flex flex-col gap-3 border-t border-border/50 pt-5">
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="mail" class="h-4 w-4 text-[#2563eb]"></i> info@bluebixinc.com
+              </div>
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="phone" class="h-4 w-4 text-[#2563eb]"></i> +1 (862) 401-1118
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Office 3 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(37,99,235,0.06)">
+          <a href="https://www.bluebixinc.com/#Contact" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+                  <i data-lucide="map-pin" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-primary">Plano</h4>
+                  <p class="text-xs font-semibold text-muted-foreground">USA</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-5 flex-1 text-sm leading-relaxed text-muted-foreground">5830 Granite Pkwy STE 100, Plano, TX 75024</p>
+            <div class="flex flex-col gap-3 border-t border-border/50 pt-5">
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="mail" class="h-4 w-4 text-[#2563eb]"></i> info@bluebixinc.com
+              </div>
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="phone" class="h-4 w-4 text-[#2563eb]"></i> +1 888 777 0933
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Office 4 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(37,99,235,0.06)">
+          <a href="https://www.bluebixinc.com/#Contact" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+                  <i data-lucide="map-pin" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-primary">Toronto</h4>
+                  <p class="text-xs font-semibold text-muted-foreground">Canada</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-5 flex-1 text-sm leading-relaxed text-muted-foreground">100 King Street West, Suite 5600, Toronto, ON, M5X 1C9</p>
+            <div class="flex flex-col gap-3 border-t border-border/50 pt-5">
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="mail" class="h-4 w-4 text-[#2563eb]"></i> info@bluebixinc.com
+              </div>
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="phone" class="h-4 w-4 text-[#2563eb]"></i> +1 888 777 0933
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Office 5 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(37,99,235,0.06)">
+          <a href="https://www.bluebixinc.com/#Contact" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+                  <i data-lucide="map-pin" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-primary">Hamilton</h4>
+                  <p class="text-xs font-semibold text-muted-foreground">Canada</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-5 flex-1 text-sm leading-relaxed text-muted-foreground">21 King Street West, 5th Floor, Hamilton, ON, L8P 4W7</p>
+            <div class="flex flex-col gap-3 border-t border-border/50 pt-5">
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="mail" class="h-4 w-4 text-[#2563eb]"></i> info@bluebixinc.com
+              </div>
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="phone" class="h-4 w-4 text-[#2563eb]"></i> +1 888 777 0933
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Office 6 -->
+        <div class="tilt-card rounded-2xl animate-reveal" data-glare="rgba(37,99,235,0.06)">
+          <a href="https://www.bluebixinc.com/#Contact" target="_blank" class="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-border/50 bg-white p-7 transition-all duration-500 hover:border-[#2563eb]/20 hover:shadow-2xl">
+            <div class="absolute left-0 top-0 h-1 w-full origin-left scale-x-0 bg-gradient-to-r from-[#2563eb] to-[#3b82f6] transition-transform duration-500 group-hover:scale-x-100"></div>
+            <div class="mb-5 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#2563eb] to-[#3b82f6] text-white shadow-lg transition-all duration-500 group-hover:scale-110">
+                  <i data-lucide="map-pin" class="h-5 w-5"></i>
+                </div>
+                <div>
+                  <h4 class="text-base font-bold text-primary">Hyderabad</h4>
+                  <p class="text-xs font-semibold text-muted-foreground">India</p>
+                </div>
+              </div>
+            </div>
+            <p class="mb-5 flex-1 text-sm leading-relaxed text-muted-foreground">DMR Corporate, 1st Floor, Kavuri Hills Rd, Madhapur, 500033</p>
+            <div class="flex flex-col gap-3 border-t border-border/50 pt-5">
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="mail" class="h-4 w-4 text-[#2563eb]"></i> info@bluebixinc.com
+              </div>
+              <div class="flex items-center gap-3 text-sm text-muted-foreground transition-colors group-hover:text-primary">
+                <i data-lucide="phone" class="h-4 w-4 text-[#2563eb]"></i> +91 8977903100
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="relative mt-16 overflow-hidden rounded-3xl bg-gradient-to-r from-[#0b1a3b] to-[#122250] p-10 text-center shadow-2xl animate-reveal lg:p-14">
+        <div class="absolute inset-0 opacity-10">
+          <div class="absolute left-1/4 top-1/4 h-40 w-40 rounded-full bg-[#2563eb] blur-3xl"></div>
+          <div class="absolute bottom-1/4 right-1/4 h-40 w-40 rounded-full bg-[#7c3aed] blur-3xl"></div>
+        </div>
+
+        <h3 class="relative mb-4 text-2xl font-black text-white lg:text-3xl">Ready to Transform Your Workforce?</h3>
+        <p class="relative mb-8 text-base text-[#94a3b8]">Let us help you find the perfect talent for your organization.</p>
+        
+        <a href="https://www.bluebixinc.com/#Contact" target="_blank" rel="noopener noreferrer" class="magnetic-btn group relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-[#2563eb] to-[#3b82f6] px-10 py-4 text-sm font-bold text-white shadow-2xl shadow-[#2563eb]/25 transition-all duration-500 hover:shadow-[#2563eb]/40">
+          <span class="relative z-10 flex items-center gap-2">
+            Contact Us Today
+            <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-1"></i>
+          </span>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#3b82f6] to-[#60a5fa] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="relative overflow-hidden bg-white border-t border-gray-200">
+    <div class="absolute bottom-0 left-1/4 h-[300px] w-[300px] rounded-full bg-[#f97316]/[0.03] blur-[100px]"></div>
+    <div class="absolute top-20 right-1/4 h-[200px] w-[200px] rounded-full bg-[#1d4ed8]/[0.03] blur-[80px]"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 py-20 lg:px-8">
+      <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+        
+        <!-- Column 1: Logo & About -->
+        <div class="lg:col-span-2">
+          <a href="https://www.bluebixinc.com" target="_blank" rel="noopener noreferrer" class="group mb-4 flex items-center">
+            <div class="relative h-16 w-52 overflow-hidden">
+              <img src="public/bluebix-logo.png" onerror="this.onerror=null; this.src='bluebix-logo.png';" alt="BlueBix Staffing Solutions" class="absolute h-[210%] w-[210%] -translate-x-[24%] -translate-y-[24%] object-contain transition-opacity duration-300 group-hover:opacity-85" />
+            </div>
+          </a>
+
+          <p class="mb-6 max-w-sm text-sm leading-relaxed text-[#475569]">
+            Bluebix is a next generation staffing solution provider serving 30+ industries including IT, Construction, Engineering, Manufacturing, Healthcare, and more.
+          </p>
+
+          <div class="mb-6 flex flex-col gap-3">
+            <a href="mailto:info@bluebixinc.com" class="group flex items-center gap-3 text-sm text-[#475569] transition-colors hover:text-[#f97316]">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
+                <i data-lucide="mail" class="h-3.5 w-3.5 text-[#60a5fa]"></i>
+              </div>
+              info@bluebixinc.com
+            </a>
+            <a href="tel:+18887770933" class="group flex items-center gap-3 text-sm text-[#475569] transition-colors hover:text-[#f97316]">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
+                <i data-lucide="phone" class="h-3.5 w-3.5 text-[#60a5fa]"></i>
+              </div>
+              +1 888 777 0933
+            </a>
+            <a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-3 text-sm text-[#475569] transition-colors hover:text-[#f97316]">
+              <div class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-50">
+                <i data-lucide="map-pin" class="h-3.5 w-3.5 text-[#60a5fa]"></i>
+              </div>
+              New York, USA (HQ)
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="flex gap-2">
+            <a href="https://www.bluebixinc.com" target="_blank" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-gray-50 text-[#475569] transition-all duration-300 hover:-translate-y-1 hover:border-[#f97316]/40 hover:bg-[#f97316]/10 hover:text-[#f97316] hover:shadow-lg">
+              <i data-lucide="facebook" class="h-4 w-4"></i>
+            </a>
+            <a href="https://www.bluebixinc.com" target="_blank" aria-label="Instagram" class="flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-gray-50 text-[#475569] transition-all duration-300 hover:-translate-y-1 hover:border-[#f97316]/40 hover:bg-[#f97316]/10 hover:text-[#f97316] hover:shadow-lg">
+              <i data-lucide="instagram" class="h-4 w-4"></i>
+            </a>
+            <a href="https://www.bluebixinc.com" target="_blank" aria-label="YouTube" class="flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-gray-50 text-[#475569] transition-all duration-300 hover:-translate-y-1 hover:border-[#f97316]/40 hover:bg-[#f97316]/10 hover:text-[#f97316] hover:shadow-lg">
+              <i data-lucide="youtube" class="h-4 w-4"></i>
+            </a>
+            <a href="https://www.bluebixinc.com" target="_blank" aria-label="LinkedIn" class="flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-gray-50 text-[#475569] transition-all duration-300 hover:-translate-y-1 hover:border-[#f97316]/40 hover:bg-[#f97316]/10 hover:text-[#f97316] hover:shadow-lg">
+              <i data-lucide="linkedin" class="h-4 w-4"></i>
+            </a>
+            <a href="https://www.bluebixinc.com" target="_blank" aria-label="Twitter" class="flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-gray-50 text-[#475569] transition-all duration-300 hover:-translate-y-1 hover:border-[#f97316]/40 hover:bg-[#f97316]/10 hover:text-[#f97316] hover:shadow-lg">
+              <i data-lucide="twitter" class="h-4 w-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#1e3a5f]">Quick Links</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Home <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com/about" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">About <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com/diversity" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Diversity <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com/privacy" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Privacy Policy <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com/sitemap" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Site Map <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Workforce -->
+        <div>
+          <h3 class="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#1e3a5f]">Workforce</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Temporary Services <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Payroll Services <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Offshore Services <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Direct Services <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">RPO Services <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">IT Managed Services <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Industries -->
+        <div>
+          <h3 class="mb-6 text-xs font-bold uppercase tracking-[0.2em] text-[#1e3a5f]">Industries</h3>
+          <ul class="flex flex-col gap-3">
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Construction <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Manufacturing <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">C-Suite <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">IT <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">Engineering <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+            <li><a href="https://www.bluebixinc.com" target="_blank" class="group flex items-center gap-1 text-sm text-[#475569] transition-colors hover:text-[#f97316]">View All <i data-lucide="arrow-up-right" class="h-3 w-3 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-200 bg-gray-50">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm text-[#64748b] md:flex-row lg:px-8">
+        <p>&copy; 2025 BlueBix Inc. All rights reserved.</p>
+        <a href="https://www.bluebixinc.com" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1 text-[#f97316] transition-colors hover:text-[#1e3a5f]">
+          www.bluebixinc.com
+          <i data-lucide="arrow-up-right" class="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button id="scroll-to-top" class="fixed bottom-8 right-8 z-50 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-r from-[#2563eb] to-[#3b82f6] text-white shadow-2xl shadow-[#2563eb]/30 transition-all duration-500 hover:scale-110 hover:shadow-[#2563eb]/50 translate-y-4 opacity-0 pointer-events-none" aria-label="Scroll to top">
+    <i data-lucide="arrow-up" class="h-5 w-5"></i>
+  </button>
+
+  <!-- External Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
